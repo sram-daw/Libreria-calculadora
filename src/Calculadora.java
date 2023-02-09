@@ -31,14 +31,12 @@ public class Calculadora {
      * @param operacion    entero que determina qué operación se va a realizar.
      * @return devuelve un Integer con el resultado de la operación o un null en caso de que haya habido un error.
      */
-
-    //se pasan dos Integer por parámetros en lugar de dos float, como dice el enunciado del ejercicio, para poder usar el método de entrada de la anterior librería.
-    public static Integer operar(Integer primerValor, Integer segundoValor, int operacion) {
+    public static Integer operar(float primerValor, float segundoValor, int operacion) {
         Integer resultado = 0;
         switch (operacion) {
             case SUMA:
                 try {
-                    resultado = primerValor + segundoValor;
+                    resultado = Math.round(primerValor) + Math.round(segundoValor);
                     return resultado;
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
@@ -47,7 +45,7 @@ public class Calculadora {
 
             case RESTA:
                 try {
-                    resultado = primerValor - segundoValor;
+                    resultado = Math.round(primerValor) - Math.round(segundoValor);
                     return resultado;
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
@@ -56,7 +54,7 @@ public class Calculadora {
 
             case MULTIPLICACION:
                 try {
-                    resultado = primerValor * segundoValor;
+                    resultado = Math.round(primerValor) * Math.round(segundoValor);
                     return resultado;
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
@@ -64,7 +62,7 @@ public class Calculadora {
                 }
             case DIVISION:
                 try {
-                    resultado = primerValor / segundoValor;
+                    resultado = Math.round(primerValor) / Math.round(segundoValor);
                     return resultado;
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
