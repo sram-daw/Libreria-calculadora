@@ -36,7 +36,7 @@ public class EntradaSalida {
      * Salida por ventana o consola de un mensaje
      *
      * @param msj    cadena que queremos imprimir
-     * @param device dispositivo de salida<br>consola: SALIDA_CONSOLA<br>ventana:SALIDA_VENTANA
+     * @param device dispositivo de salida por consola: SALIDA_CONSOLA, salida por ventana:SALIDA_VENTANA
      * @return si es true: correcto si no false
      */
     public static boolean salida(String msj, int device) {
