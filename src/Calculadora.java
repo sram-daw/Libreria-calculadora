@@ -24,12 +24,12 @@ public class Calculadora {
     public static final int DIVISION = 4;
 
     /**
-     * Opción de uso para la operación de raíz cuadrada
+     * Opción de uso para la operación de raíz
      */
     public static final int RAIZCUADRADA = 5;
 
     /**
-     * Método para operar con dos dos valores, realizando una suma, resta, multiplicación o división.
+     * Método para operar con dos dos valores, realizando una suma, resta, multiplicación, división o raíces.
      *
      * @param primerValor  el primer valor que introduce el usuario para operar (float).
      * @param segundoValor el segundo valor que introduce el usuario para operar (float).
@@ -75,14 +75,8 @@ public class Calculadora {
                 }
             case RAIZCUADRADA:
                 try {
-                    if (segundoValor == 2) {
-                        resultado = (int) Math.sqrt(primerValor);
-                        return resultado;
-                    } else if (segundoValor == 3) {
-                        resultado = (int) Math.cbrt(primerValor);
-                        return resultado;
-
-                    }
+                    resultado = (int) Math.pow(primerValor, 1.0 / segundoValor);
+                    return resultado;
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
                     return null;
