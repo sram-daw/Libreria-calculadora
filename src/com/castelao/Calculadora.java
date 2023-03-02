@@ -1,3 +1,5 @@
+package com.castelao;
+
 /**
  * Libreria para crear una calculadora con las operaciones de suma, resta, multiplicación y división.
  *
@@ -26,7 +28,7 @@ public class Calculadora {
     /**
      * Opción de uso para la operación de raíz
      */
-    public static final int RAIZCUADRADA = 5;
+    public static final int RAIZ = 5;
 
     /**
      * Método para operar con dos dos valores, realizando una suma, resta, multiplicación, división o raíces.
@@ -73,7 +75,7 @@ public class Calculadora {
                     System.out.println(e.getMessage());
                     return null;
                 }
-            case RAIZCUADRADA:
+            case RAIZ:
                 try {
                     resultado = (int) Math.pow(primerValor, 1.0 / segundoValor);
                     return resultado;
