@@ -1,3 +1,5 @@
+package com.castelao;
+
 /**
  * Libreria para crear una calculadora con las operaciones de suma, resta, multiplicación y división.
  *
@@ -29,7 +31,7 @@ public class Calculadora {
     public static final int RAIZCUADRADA = 5;
 
     /**
-     * Método para operar con dos dos valores, realizando una suma, resta, multiplicación o división.
+     * Método para operar con dos dos valores, realizando una suma, resta, multiplicación, división o raíces cuadradas o cúbicas.
      *
      * @param primerValor  el primer valor que introduce el usuario para operar (float).
      * @param segundoValor el segundo valor que introduce el usuario para operar (float).
